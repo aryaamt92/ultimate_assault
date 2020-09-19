@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Terminator Two';
-    src: url('TerminatorTwo.woff2') format('woff2'),
-        url('TerminatorTwo.woff') format('woff');
+    src: url('https://github.com/aryaamt92/ultimate_assault/blob/master/TerminatorTwo.woff2') format('woff2'),
+        url('https://github.com/aryaamt92/ultimate_assault/blob/master/TerminatorTwo.woff') format('woff');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
