@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'Terminator Two';
+    src: url('TerminatorTwo.woff2') format('woff2'),
+        url('TerminatorTwo.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+  min-height: 100%;
+  background-image: linear-gradient(rgba(57, 62, 70, 0.7), rgba(57, 62, 70, 0.9));
+}
+
+body {
+  width: 80%;
+  min-width: 600px;
+  margin: auto;
+  min-height: 100%;
+  background-color: #222831;
+  font-family: 'Russo One', sans-serif;
+}
+
+.cover-img {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.header {
+  border-left: solid 3px #7e97a6;
+  border-right: solid 3px #7e97a6;
+  border-bottom: solid 1px #7e97a6;
+  box-shadow: 3px 0px 3px white, -3px 0px 3px white;
+  font-family: 'Terminator Two', sans-serif;
+  position: relative;
+  text-align: center;
+}
+
+.footer {
+  background-color: #283235;
+  padding: 3rem;
+  border-left: solid 3px #7e97a6;
+  border-right: solid 3px #7e97a6;
+  border-top: solid 1px #7e97a6;
+  box-shadow: 3px 0px 3px white, -3px 0px 3px white;
+}
+
+.footer > p {
+  font-size: 0.7rem;
+  text-align: center;
+  color: #66efbf;
+}
+
+h1 {
+  color: #66efbf;
+  letter-spacing: 5px;
+  /* color: #68b0ab; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 3rem;
+  transform: translate(-50%, -50%);
+}
+
+.sect {
+  padding: 2rem;
+  color: #68b0ab;
+  border-left: solid 3px #7e97a6;
+  border-right: solid 3px #7e97a6;
+  box-shadow: 3px 0px 3px white, -3px 0px 3px white;
+}
+
+em {
+  color: #ed6663;
+  font-size: 0.8rem;
+}
+
+ol > li {
+  margin: 1rem;
+}
+
+.class-props > li {
+  font-size: 0.8rem;
+}
+
+.weapon-props {
+  font-size: 0.9rem;
+  margin-left: -1.5rem;
+}
+
+.perk-props {
+  font-size: 0.8rem;
+  margin-left: -1rem;
+  margin-top: -1rem;
+}
+
+.img-cont {
+  padding: 0.2rem;
+}
+
+.btn-dl {
+  background-color: #68b0ab;
+  color: #222831;
+  border: none;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.content {
+  padding: 1rem;
+}
+
+#classes {
+  margin: 1rem;
+}
+
+#weapons, #grenades, #perks, #killstreaks {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.btn-dl:hover, a:hover {
+  color: white;
+  background-color: #68b0ab;
+}
+
+h4 {
+  color: #66efbf;
+  margin-bottom: 2rem;
+  letter-spacing: 5px;
+}
+
+h5 {
+  color: #66efbf;
+  margin-bottom: 1rem;
+  letter-spacing: 3px;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+h6.title {
+  font-size: 1.1rem;
+  color: #66efbf;
+}
+
+td {
+  padding: 0.5rem 1rem;
+}
+
+td > p {
+  font-size: 0.9rem;
+}
+
+
+.class-img {
+  height: 200px;
+}
+
+.weapon-img {
+  width: 150px;
+}
+
+input {
+  width: 80%;
+  max-width: 200px;
+  align-self: right;
+  margin-left: 1.6rem;
+}
+
+.form-div {
+  max-width: 600px;
+}
+
+.grenade-img, .perk-img, .ks-img {
+  width: 100px;
+}
+
+textarea {
+  /* margin-top: 0.5rem; */
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* font-family: 'Changa One', cursive;
+font-family: 'Gugi', cursive;
+font-family: 'Kumar One', cursive;
+font-family: 'Oxanium', cursive;
+font-family: 'Rowdies', cursive;
+font-family: 'Stardos Stencil', cursive;
+font-family: 'Wallpoet', cursive; */

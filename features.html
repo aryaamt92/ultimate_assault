@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" >
+    <meta name="description" content="This is the webpage dedicated to the game Ultimate Assault 1 developed by Arya Amootaghi (Ali)">
+    <title>Ultimate Assault</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Gugi&family=Kumar+One&family=Oxanium:wght@200;300;400;500;600;700;800&family=Rowdies:wght@300;400;700&family=Stardos+Stencil:wght@400;700&family=Wallpoet&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/c060511a5406475216dc43700e09a066?family=Terminator+Two" rel="stylesheet" type="text/css"/>
+
+    <script src="https://kit.fontawesome.com/556093576a.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/icon2.ico">
+  </head>
+  <body>
+    <div class="header">
+      <img class="cover-img" src="images/cover.jpg" alt="">
+      <h1>Ultimate Assault</h1>
+    </div>
+    <div class="sect">
+      <h4>Features</h4>
+      <div class="content">
+        <h5>Classes</h5>
+        <em>The percentages are based on the average value considered.</em>
+        <div id="classes" class="row">
+          <div class="col-xl-6">
+            <table>
+              <tr valign="top">
+                <td><img class="class-img" src="images/class/assault.png" alt=""></td>
+                <td>
+                  <h6 class="title">Assault</h6>
+                  <p>The class is average in everything.</p>
+                  <h6>Details</h6>
+                  <ul class="class-props">
+                    <li>Stamina : +10%</li>
+                    <li>Air-supply Packages : all types of packages are possible</li>
+                    <li>Ability to turn airdrops into traps (Hold shift+F when in contact)</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-6">
+            <table>
+              <tr valign="top">
+                <td><img class="class-img" src="images/class/engineer.png" alt=""></td>
+                <td>
+                  <h6 class="title">Engineer</h6>
+                  <p>Works more efficiently with explosives and machines</p>
+                  <h6>Details</h6>
+                  <ul class="class-props">
+                    <li>Speed : -10%</li>
+                    <li>Clips : +1</li>
+                    <li>Grenades : +2</li>
+                    <li>Grenade Toss Range : +10%</li>
+                    <li>Explosives Damage : +20%</li>
+                    <li>Explosives Radius : +10%</li>
+                    <li>Accuracy : +10%</li>
+                    <li>Air-supply Packages : Ammo, Gun, Personal Radar, UGCV</li>
+                    <li>Ability to capture enemy Sentries and UGCVs (Hold shift+F when in contact)</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-6">
+            <table>
+              <tr valign="top">
+                <td><img class="class-img" src="images/class/recon.png" alt=""></td>
+                <td>
+                  <h6 class="title">Recon</h6>
+                  <p>He is fast and precise and he has extra reconnaissance capabilities.</p>
+                  <h6>Details</h6>
+                  <ul class="class-props">
+                    <li>Health : -20%</li>
+                    <li>Stamina : -10%</li>
+                    <li>Speed and Weapon Range : +10%</li>
+                    <li>Clips : -1</li>
+                    <li>Grenade Toss Range : -10%</li>
+                    <li>Explosives Damage : +10%</li>
+                    <li>Explosives Radius : -10%</li>
+                    <li>Accuracy : +20%</li>
+                    <li>Air-supply Packages : Ammo, Gun, Personal Radar, Advanced UAV</li>
+                    <li>Ability to observe enemies' directions on the map</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-6">
+            <table>
+              <tr valign="top">
+                <td><img class="class-img" src="images/class/support.png" alt=""></td>
+                <td>
+                  <h6 class="title">Support</h6>
+                  <p>Heavily loaded and armoured with extra shielded machines.</p>
+                  <h6>Details</h6>
+                  <ul class="class-props">
+                    <li>Health : +20%</li>
+                    <li>Speed and Weapon Range : -10%</li>
+                    <li>Clips : +2</li>
+                    <li>Grenades : +1</li>
+                    <li>Grenade Toss Range : -10%</li>
+                    <li>Explosives Radius : +10%</li>
+                    <li>Accuracy : -10%</li>
+                    <li>Air-supply Packages : Ammo, Gun, Personal Radar, MG Turret</li>
+                    <li>20% extra armour for his Sentries, Harriers and UGCVs</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h5>Weapons</h5>
+        <em>The weapons specifications are not mentioned in details but they include Maximum Bullets, Magazine Capacity, Bullet Range, Bullet Speed, Bullet Damage, Bullet Size, Fire Rate, Accuracy and Reload Time</em>
+        <div id="weapons" class="row">
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/ar/F2000.png" alt=""></td>
+                <td>
+                  <h6 class="title">F2000</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Assault Rifle</li>
+                    <li>Most Compatible : Assault</li>
+                    <li>Laser Aim : 3.5x</li>
+                    <li>Thermal Vision</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/ar/AUG.png" alt=""></td>
+                <td>
+                  <h6 class="title">AUG</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Assault Rifle</li>
+                    <li>Most Compatible : Recon</li>
+                    <li>Scope : 1x</li>
+                    <li>Silencer</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/ar/FAMAS.png" alt=""></td>
+                <td>
+                  <h6 class="title">FAMAS</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Assault Rifle</li>
+                    <li>Most Compatible : Engineer</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/ar/AK74.png" alt=""></td>
+                <td>
+                  <h6 class="title">AK-74</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Assault Rifle</li>
+                    <li>Most Compatible : Engineer</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/ar/AK47.png" alt=""></td>
+                <td>
+                  <h6 class="title">AK-47</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Assault Rifle</li>
+                    <li>Most Compatible : Assault</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/ar/M4.png" alt=""></td>
+                <td>
+                  <h6 class="title">M-4</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Assault Rifle</li>
+                    <li>Most Compatible : Assault</li>
+                    <li>Scope : 2x</li>
+                    <li>Silencer</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/ar/AK103.png" alt=""></td>
+                <td>
+                  <h6 class="title">AK-103</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Assault Rifle</li>
+                    <li>Most Compatible : Assault</li>
+                    <li>Scope : 1x</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/ar/CM901.png" alt=""></td>
+                <td>
+                  <h6 class="title">CM-901</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Assault Rifle</li>
+                    <li>Most Compatible : Engineer</li>
+                    <li>Scope : 1x</li>
+                    <li>Thermal Vision</li>
+                    <li>Silencer</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/ar/ACR.png" alt=""></td>
+                <td>
+                  <h6 class="title">ACR</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Assault Rifle</li>
+                    <li>Most Compatible : Engineer</li>
+                    <li>Laser Aim : 3x</li>
+                    <li>Scope : 1x</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/ar/G36.png" alt=""></td>
+                <td>
+                  <h6 class="title">G-36</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Assault Rifle</li>
+                    <li>Most Compatible : Assault</li>
+                    <li>Laser Aim : 3x</li>
+                    <li>Scope : 1x</li>
+                    <li>Thermal Vision</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/ar/SCAR.png" alt=""></td>
+                <td>
+                  <h6 class="title">SCAR</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Assault Rifle</li>
+                    <li>Most Compatible : Assault</li>
+                    <li>Laser Aim : 3x</li>
+                    <li>Silencer</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/ar/FAL.png" alt=""></td>
+                <td>
+                  <h6 class="title">FAL</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Assault Rifle</li>
+                    <li>Most Compatible : Engineer</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/smg/UZI.png" alt=""></td>
+                <td>
+                  <h6 class="title">UZI</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Submachine Gun</li>
+                    <li>Most Compatible : Recon</li>
+                    <li>Scope : 0.5x</li>
+                    <li>Silencer</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/smg/MAC10.png" alt=""></td>
+                <td>
+                  <h6 class="title">MAC-10</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Submachine Gun</li>
+                    <li>Most Compatible : Recon</li>
+                    <li>Laser Aim : 3x</li>
+                    <li>Silencer</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/smg/MP7.png" alt=""></td>
+                <td>
+                  <h6 class="title">MP-7</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Submachine Gun</li>
+                    <li>Most Compatible : Engineer</li>
+                    <li>Laser Aim : 3x</li>
+                    <li>Scope : 1x</li>
+                    <li>Silencer</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/smg/MP5K.png" alt=""></td>
+                <td>
+                  <h6 class="title">MP-5-K</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Submachine Gun</li>
+                    <li>Most Compatible : Recon</li>
+                    <li>Scope : 2x</li>
+                    <li>Silencer</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/smg/UMP45.png" alt=""></td>
+                <td>
+                  <h6 class="title">UMP-45</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Submachine Gun</li>
+                    <li>Most Compatible : Assault</li>
+                    <li>Laser Aim : 2.5x</li>
+                    <li>Scope : 1x</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/smg/VECTOR.png" alt=""></td>
+                <td>
+                  <h6 class="title">VECTOR</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Submachine Gun</li>
+                    <li>Most Compatible : Recon</li>
+                    <li>Laser Aim : 3.5x</li>
+                    <li>Scope : 0.5x</li>
+                    <li>Thermal Vision</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/smg/P90.png" alt=""></td>
+                <td>
+                  <h6 class="title">P-90</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Submachine Gun</li>
+                    <li>Most Compatible : Assault</li>
+                    <li>Scope : 3x</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/smg/SPAS12.png" alt=""></td>
+                <td>
+                  <h6 class="title">SPAS-12</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Shot Gun</li>
+                    <li>Most Compatible : Engineer</li>
+                    <li>Laser Aim : 2.5x</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/smg/M1014.png" alt=""></td>
+                <td>
+                  <h6 class="title">M-1014</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Shot Gun</li>
+                    <li>Most Compatible : Assault</li>
+                    <li>Scope : 2.5x</li>
+                    <li>Automatic Fire</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/smg/STRYKER.png" alt=""></td>
+                <td>
+                  <h6 class="title">STRYKER</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Shot Gun</li>
+                    <li>Most Compatible : Support</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/smg/AA12.png" alt=""></td>
+                <td>
+                  <h6 class="title">AA-12</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Shot Gun</li>
+                    <li>Most Compatible : Support</li>
+                    <li>Scope : 1.5x</li>
+                    <li>Automatic Fire</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/mg/M240.png" alt=""></td>
+                <td>
+                  <h6 class="title">M-240</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Light Machine Gun</li>
+                    <li>Most Compatible : Support</li>
+                    <li>Scope : 1.5x</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/mg/MG4.png" alt=""></td>
+                <td>
+                  <h6 class="title">MG-4</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Light Machine Gun</li>
+                    <li>Most Compatible : Support</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/sniper/SCOUT.png" alt=""></td>
+                <td>
+                  <h6 class="title">SCOUT</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Sniper Rifle</li>
+                    <li>Most Compatible : Support</li>
+                    <li>Scope : 3x</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/sniper/M40.png" alt=""></td>
+                <td>
+                  <h6 class="title">M-40</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Sniper Rifle</li>
+                    <li>Most Compatible : Recon</li>
+                    <li>Scope : 3.5x</li>
+                    <li>Silencer</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/sniper/DRAGONAV.png" alt=""></td>
+                <td>
+                  <h6 class="title">DRAGONAV</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Sniper Rifle</li>
+                    <li>Most Compatible : Support</li>
+                    <li>Scope : 3x</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/sniper/AS50.png" alt=""></td>
+                <td>
+                  <h6 class="title">AS-50</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Sniper Rifle</li>
+                    <li>Most Compatible : Recon</li>
+                    <li>Laser Aim : 3x</li>
+                    <li>Scope : 3.5x</li>
+                    <li>Thermal Vision</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="weapon-img" src="images/sniper/BARRETT.png" alt=""></td>
+                <td>
+                  <h6 class="title">BARRETT</h6>
+                  <ul class="weapon-props">
+                    <li>Class : Sniper Rifle</li>
+                    <li>Most Compatible : Support</li>
+                    <li>Laser Aim : 3x</li>
+                    <li>Scope : 4x</li>
+                    <li>Thermal Vision</li>
+                    <li>Silencer</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h5>Tactial Grenades</h5>
+        <em>Press F to fuse the grenades, hold and release F to toss. Use the mouse pointer to aim.</em>
+        <div id="grenades" class="row">
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="grenade-img" src="images/grenade/FLASH.png" alt=""></td>
+                <td>
+                  <h6 class="title">Flash Grenade</h6>
+                  <p>Self-descriptive :)</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="grenade-img" src="images/grenade/STUN.png" alt=""></td>
+                <td>
+                  <h6 class="title">Stun Grenade</h6>
+                  <p>Self-descriptive :) :)</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="grenade-img" src="images/grenade/SMOKE.png" alt=""></td>
+                <td>
+                  <h6 class="title">Smoke Grenade</h6>
+                  <p>Self-descriptive lol</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="grenade-img" src="images/grenade/FRAG.png" alt=""></td>
+                <td>
+                  <h6 class="title">Frag Grenade</h6>
+                  <p>Shorter explosion radius but stronger blast </br>Spreads shrapnels</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="grenade-img" src="images/grenade/CS.png" alt=""></td>
+                <td>
+                  <h6 class="title">CS Gas Grenade</h6>
+                  <p>Reduces enemies max speed by 30% and max stamina by 50% within the impact radius</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="grenade-img" src="images/grenade/CLAYMORE.png" alt=""></td>
+                <td>
+                  <h6 class="title">Claymore Mine</h6>
+                  <p>Is not revealed in for enemy players</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="grenade-img" src="images/grenade/MOLOTOV.png" alt=""></td>
+                <td>
+                  <h6 class="title">Molotov Cocktail</h6>
+                  <p>Burning damage within the area of impact </br>No blast damage</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="grenade-img" src="images/grenade/AA.png" alt=""></td>
+                <td>
+                  <h6 class="title">Javelin Missile</h6>
+                  <p>Intelligent homing missile </br>You have to lock on your target first. Work only on specific targets</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="grenade-img" src="images/grenade/RPG.png" alt=""></td>
+                <td>
+                  <h6 class="title">RPG Rocket</h6>
+                  <p>Detonates on impact</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h5>Perks</h5>
+        <em>The game is started in Regular mode and the Pro mode is activated after the player meets a certain set of circumstances (Pro perks are added up to the Regular perks and not replace.)</em>
+        <div id="perks" class="row">
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="perk-img" src="images/perks/die-hard.png" alt=""></td>
+                <td>
+                  <h6 class="title">Die Hard</h6>
+                  <p>Regular :</p>
+                  <ul class="perk-props">
+                    <li>+10% Health</li>
+                  </ul>
+                  <p>Pro :</p>
+                  <ul class="perk-props">
+                    <li>+10% Health</li>
+                    <li>Health resistence to phosphorus gas</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="perk-img" src="images/perks/runner.png" alt=""></td>
+                <td>
+                  <h6 class="title">Runner</h6>
+                  <p>Regular :</p>
+                  <ul class="perk-props">
+                    <li>+10% Speed</li>
+                  </ul>
+                  <p>Pro :</p>
+                  <ul class="perk-props">
+                    <li>+10% Speed</li>
+                    <li>Speed resistence to CS grenades and phosphorus gas</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="perk-img" src="images/perks/buff.png" alt=""></td>
+                <td>
+                  <h6 class="title">Buff</h6>
+                  <p>Regular :</p>
+                  <ul class="perk-props">
+                    <li>+10% Stamina</li>
+                  </ul>
+                  <p>Pro :</p>
+                  <ul class="perk-props">
+                    <li>+20% Stamina</li>
+                    <li>Stamina resistence to CS grenades and phosphorus gas</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="perk-img" src="images/perks/commando.png" alt=""></td>
+                <td>
+                  <h6 class="title">Commando</h6>
+                  <p>Regular :</p>
+                  <ul class="perk-props">
+                    <li>+20% Melee attack range</li>
+                    <li>+40% Melee attack angle</li>
+                    <li>+50% Melee attack speed</li>
+                  </ul>
+                  <p>Pro :</p>
+                  <ul class="perk-props">
+                    <li>+20% Melee attack range</li>
+                    <li>+100% Melee attack angle</li>
+                    <li>+20% Melee attack speed</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="perk-img" src="images/perks/hardline.png" alt=""></td>
+                <td>
+                  <h6 class="title">Hard-line</h6>
+                  <p>Regular :</p>
+                  <ul class="perk-props">
+                    <li>-1 Killstreaks of all levels required kills</li>
+                  </ul>
+                  <p>Pro :</p>
+                  <ul class="perk-props">
+                    <li>-1 Killstreak level 2 required kills</li>
+                    <li>-2 Killstreak level 3 required kills</li>
+                    <li>Precision-strikes and Carpet-bombers turn into Precision-napalms and Carpet-napalms</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="perk-img" src="images/perks/hitman.png" alt=""></td>
+                <td>
+                  <h6 class="title">Hitman</h6>
+                  <p>Regular :</p>
+                  <ul class="perk-props">
+                    <li>+20% Bullet damage</li>
+                  </ul>
+                  <p>Pro :</p>
+                  <ul class="perk-props">
+                    <li>+20% Fire rate</li>
+                    <li>Reload time decrease</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="perk-img" src="images/perks/xload.png" alt=""></td>
+                <td>
+                  <h6 class="title">X Load</h6>
+                  <p>Regular :</p>
+                  <ul class="perk-props">
+                    <li>+2 Clips</li>
+                  </ul>
+                  <p>Pro :</p>
+                  <ul class="perk-props">
+                    <li>+2 Clips</li>
+                    <li>+2 Hand grenades</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="perk-img" src="images/perks/sapper.png" alt=""></td>
+                <td>
+                  <h6 class="title">Sapper</h6>
+                  <p>Regular :</p>
+                  <ul class="perk-props">
+                    <li>+10% Explosion radius for explosives</li>
+                    <li>+10% Explosion damage for explosives</li>
+                  </ul>
+                  <p>Pro :</p>
+                  <ul class="perk-props">
+                    <li>+1 Hand grenade and special grenade</li>
+                    <li>+20% Grenade toss range</li>
+                    <li>Assault : Detrap trapped airdrops</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="perk-img" src="images/perks/steady.png" alt=""></td>
+                <td>
+                  <h6 class="title">Steady</h6>
+                  <p>Regular :</p>
+                  <ul class="perk-props">
+                    <li>+20% Accuracy</li>
+                  </ul>
+                  <p>Pro :</p>
+                  <ul class="perk-props">
+                    <li>+50% Accuracy</li>
+                    <li>+20% Bullet speed</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="perk-img" src="images/perks/gadgeteer.png" alt=""></td>
+                <td>
+                  <h6 class="title">Gadgeteer</h6>
+                  <p>Regular :</p>
+                  <ul class="perk-props">
+                    <li>+20% Attachments range (Have to be already attached)</li>
+                  </ul>
+                  <p>Pro :</p>
+                  <ul class="perk-props">
+                    <li>Attaches any missing attachments (Silencer, Thermal vision, 3x Scope and 2.5x Laser aim)</li>
+                    <li>+40% Laser aim range (Has to be already attached)</li>
+                    <li>+50% Scope range (Has to be already attached)</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="perk-img" src="images/perks/scavenge.png" alt=""></td>
+                <td>
+                  <h6 class="title">Scavenger</h6>
+                  <p>Regular :</p>
+                  <ul class="perk-props">
+                    <li>+1 Clip per kill</li>
+                    <li>Chance for +1 grenade per kill (30% Hand and 10% Tactical)</li>
+                  </ul>
+                  <p>Pro :</p>
+                  <ul class="perk-props">
+                    <li>+1 Clip per kill</li>
+                    <li>Grenade chances change (50% Hand and 50% Tactical)</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="perk-img" src="images/perks/martyr.png" alt=""></td>
+                <td>
+                  <h6 class="title">Martyr</h6>
+                  <p>Regular :</p>
+                  <ul class="perk-props">
+                    <li>Drop a fused hand grenade when killed</li>
+                  </ul>
+                  <p>Pro :</p>
+                  <ul class="perk-props">
+                    <li>Drop 3 fused CS gas grenades when killed</li>
+                    <li>Can perform last melee attack when killed</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="perk-img" src="images/perks/sitrep.png" alt=""></td>
+                <td>
+                  <h6 class="title">Sitrep</h6>
+                  <p>Regular :</p>
+                  <ul class="perk-props">
+                    <li>Can detect enemy mines within certain distance</li>
+                    <li>Can identify enemy Regular Ninjas</li>
+                  </ul>
+                  <p>Pro :</p>
+                  <ul class="perk-props">
+                    <li>Can identify enemy Pro Ninjas</li>
+                    <li>Can detect traps</li>
+                    <li>Engineer : Can defuse enemy mines</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="perk-img" src="images/perks/hawk-eye.png" alt=""></td>
+                <td>
+                  <h6 class="title">Hawk-eye</h6>
+                  <p>Regular :</p>
+                  <ul class="perk-props">
+                    <li>+50% Flash and stun recovery rate</li>
+                  </ul>
+                  <p>Pro :</p>
+                  <ul class="perk-props">
+                    <li>+50% Flash and stun recovery rate</li>
+                    <li>Can see through smoke</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="perk-img" src="images/perks/ninja.png" alt=""></td>
+                <td>
+                  <h6 class="title">Ninja</h6>
+                  <p>Regular :</p>
+                  <ul class="perk-props">
+                    <li>Invisible to enemies eyes unless when shooting or being shot (Visible to aerial radars)</li>
+                  </ul>
+                  <p>Pro :</p>
+                  <ul class="perk-props">
+                    <li>Invisible to enemy Regular Sitreps</li>
+                    <li>Invisible to enemy non-Sitrep aerial radars</li>
+                    <li>Invisble to enemy Sentries</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h5>Killstreaks</h5>
+        <em>Killstreaks are activated for the player by achieving kills in row (Use 1, 2 and 3 keys). There is a cooldown time after the killstreak is used.</em>
+        <em>Change the path selector direction using mouse wheel.</em>
+        <div id="killstreaks" class="row">
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="ks-img" src="images/ks/uav.png" alt=""></td>
+                <td>
+                  <h6 class="title">UAV Radar - 3 Kills</h6>
+                  <p>Reveals the enemies positions to the team players on map for a limited amount on time</br>Recon : Enemies directions are also revealed </p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="ks-img" src="images/ks/cuav.png" alt=""></td>
+                <td>
+                  <h6 class="title">Counter UAV - 3 Kills</h6>
+                  <p>Blocks enemy UAV from revealing player's position for a limited amount of time</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="ks-img" src="images/ks/airdrop.png" alt=""></td>
+                <td>
+                  <h6 class="title">Airdrop Package - 4 Kills</h6>
+                  <p>Calls for an airdrop ammo package to the selected position by player</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="ks-img" src="images/ks/emp.png" alt=""></td>
+                <td>
+                  <h6 class="title">Electro-Magnetic Pulse - 5 Kills</h6>
+                  <p>Calls for an EMP shutting down enemy radars, laser aims, scopes and thermal visions for a certain amount of time</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="ks-img" src="images/ks/coyote.png" alt=""></td>
+                <td>
+                  <h6 class="title">Coyote Suicide Drone - 5 Kills</h6>
+                  <p>Calls for a Coyote suicide drone to be controlled and detonated by player </br>Drone is detonated automaticall after a certain amount of time</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="ks-img" src="images/ks/sentry.png" alt=""></td>
+                <td>
+                  <h6 class="title">Sentry Gun - 6 Kills</h6>
+                  <p>Player can install an automatic Sentry gun </br>Shoots enemies down, can be damaged, destroyed and captured by engineers</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="ks-img" src="images/ks/precision.png" alt=""></td>
+                <td>
+                  <h6 class="title">Precision Strike - 6 Kills</h6>
+                  <p>Calls for 3 precision air strikes on the selected position via map </br>Pro Hard-line : Precision Napalm Strike</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="ks-img" src="images/ks/artillary.png" alt=""></td>
+                <td>
+                  <h6 class="title">Artillary Strike - 6 Kills</h6>
+                  <p>Calls for 3 rounds of artillary strikes on the selected position via laser beacon</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="ks-img" src="images/ks/predator.png" alt=""></td>
+                <td>
+                  <h6 class="title">Predator Missile - 7 Kills</h6>
+                  <p>Activates a Predator UAV for a single guided missile strike </br>Use mouse right to switch between vision modes</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="ks-img" src="images/ks/heli.png" alt=""></td>
+                <td>
+                  <h6 class="title" style="color: #ed6663">Heli Guard - 7 Kills</h6>
+                  <p style="color: #ed6663">Calls for an unmanned light helicopter to follow and protect the player</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="ks-img" src="images/ks/harrier.png" alt=""></td>
+                <td>
+                  <h6 class="title">Harrier Strike - 7 Kills</h6>
+                  <p>Calls for a hovering Harrier to cover the selected area via map for a limited amount of time</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="ks-img" src="images/ks/airsupply.png" alt=""></td>
+                <td>
+                  <h6 class="title">Air Supply - 8 Kills</h6>
+                  <p>Calls for three packages to be dropped along the selected path via map </br>Packages include ammo, weapon, personal radar, UGCV, advanced UAV recon and MG turret</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="ks-img" src="images/ks/carpet.png" alt=""></td>
+                <td>
+                  <h6 class="title">Carpet Bomber - 9 Kills</h6>
+                  <p>Calls for a carpet bombing along the selected path via map </br>Pro Hard-line : Carpet Napalm Bomber</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="ks-img" src="images/ks/chopper.png" alt=""></td>
+                <td>
+                  <h6 style="color: #ed6663" class="title">Chopper Gunner - 10 Kills</h6>
+                  <p style="color: #ed6663">Calls for a attack helicopter to be controlled by the player for a limited amount of time</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="ks-img" src="images/ks/pavelow.png" alt=""></td>
+                <td>
+                  <h6 style="color: #ed6663" class="title">Pave Low - 11 Kills</h6>
+                  <p style="color: #ed6663">Calls for a heavy attack helicopter to cover the selected area via map for a limited amount of time</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="ks-img" src="images/ks/phosphorous.png" alt=""></td>
+                <td>
+                  <h6 class="title">White Phosphorus - 12 Kills</h6>
+                  <p>Calls for a white phosphorus attack along the selected path via map weakening enemies</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="ks-img" src="images/ks/gunship.png" alt=""></td>
+                <td>
+                  <h6 class="title">AC-130 Gunship - 12 Kills</h6>
+                  <p>Calls for a gunship to be controlled by the player for a limited amount of time </br>Use mouse wheel to switch between cannon and machine gun </br>Use mouse right to switch between vision modes</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <table>
+              <tr valign="top">
+                <td><img class="ks-img" src="images/ks/nuke.png" alt=""></td>
+                <td>
+                  <h6 class="title">Tactical Nuke - 15 Kills</h6>
+                  <p>Calls for a tactical nuclear strike claiming victory and ending the game right away</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>By Arya Amootaghi 2020©</p>
+    </div>
+  </body>
+</html>
