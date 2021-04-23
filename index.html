@@ -29,9 +29,10 @@
       <h1>Ultimate Assault</h1>
     </div>
     <div class="intro sect">
+      <h4>Game Summary</h4>
       <p>
-        ULTIMATE ASSAULT is a multiplayer 2D Third Person Shooter Team Deathmatch game. Most of the mechanics is inspired by the Call of Duty games series and are applied into a 2D game world.
-        <br /> <br /> <em>The game is still in development mode and the parameters are not well calibrated. Players may also experience errors and instabilities.</em>
+        ULTIMATE ASSAULT is a multiplayer 2D top-down Shooter team deathmatch game. Most of the mechanics is inspired from the Call of Duty games series and are applied into a 2D framework.
+        <br /> <br /> <em>The game is still in development mode and the parameters are not well calibrated. Players may experience instabilities.</em>
       </p>
 
       <p>
@@ -43,7 +44,7 @@
         </ul>
       </p>
 
-      <a href="https://srv-store6.gofile.io/download/UQ450j/Ultimate_Assault_0_7_1.zip"><button type="button" class="btn btn-primary btn-dl"><i class="fab fa-windows"></i> Download for windows (V 0.7.0.0)</button></a>
+      <a href="https://arya-amt.itch.io/ultimate-assault"><button type="button" class="btn btn-primary btn-dl"><i class="fab fa-windows"></i> Download for windows on Itch.io </button></a>
       <div class="row">
         <div class="col-sm-6 img-cont">
           <img class="cover-img" src="images/cover.jpg" alt="">
@@ -64,67 +65,68 @@
     </div>
     <div class="htp sect">
       <h4>How To Play</h4>
+      <p>The network is created based on the connection of the clients to a host via the IP address of the host's machine. It may sound difficult seeing the following steps but it is absolutely easy once you know how to find the host's IP address.</p>
       <ol>
-        <li>Connect to your local network (Every player must connect)</li>
-        <li>
-          One of the players creates a game setting the number of the players; hence setting up the server
-          <br />
-          (Map and Game Time are set by the player)
-        </li>
-        <li>Others join the created game using the local IP address of the server</li>
-        <li>Every player selects his/her name (Should be distinct), <a href="features.html#classes">Class</a> and team</li>
-        <li>Players select their <a href="features.html#weapons">Weapons</a> (Compatibility is illustrated by colors) and <a href="features.html#grenades">Tactical Grenades</a></li>
-        <li>Each player selects 3 <a href="features.html#perks">Perk</a> options (Including no-perk option) and 3 <a href="features.html#killstreaks">Killstreaks</a> </li>
-        <li>Game starts when all the players complete their setup</li>
+        <li>All the players must connect to a local network (e.g. wifi or hotspot).</li>
+        <li>Run the game file to see the title screen and press any key to go to the game start screen.</li>
+        <li>One of the players must <span style="color: red"><em>host</em></span> a game via the "<strong style="color: red">CREATE</strong>" option also specifying the number of the players for the game to start and the map and the time duration of the game.</li>
+        <li>When the game settings are specified by the<em>host</em>, other players have to "<strong style="color: red">JOIN</strong>" the game via the local IP address of the <em>host</em>. The IP address can be found via running the <code style="color: red">ipconfig</code> command on the <em>host</em>'s machine ***.</li>
+        <li>Once the host has created the game and the players have joined the game, every player must pick his/her name (names should be distinct), <a href="features.html#classes">class</a> and team (red or blue).</li>
+        <li>Every player is then asked to select his/her <a href="features.html#weapons">weapon</a> and <a href="features.html#grenades">tactical grenade</a>. Any player can pick any weapon, however, the compatibility between the selected class and the weapon is illustrated by colors.</li>
+        <li>Every player must select 3 <a href="features.html#perks">perk</a> options (Including no-perk option) and 3 <a href="features.html#killstreaks">killstreaks</a>.</li>
+        <li>Players who have completed their customization completed will be waiting in the lobby until the game is full (according to the players number specified by <em>host</em>).</li>
+        <li>The game starts when the lobby is full.</li>
       </ol>
-      <em style="font-size: 1rem">To run the game on a single machine for test purposes : You can run multiple instances of the game on the same machine, create a game as the server (host) in one of the instances and set the local IP of the machie for other instances (clients) to join.</em>
+      <p><strong>*** <em>Game may throw an error or "hang", should the specified IP not be correct and the connection fail.</em></strong></p>
+      <br>
+      <em style="font-size: 1rem">To run the game on a single machine for test purposes : You can run multiple instances of the game on the same machine. Treat one of the instances as the "Host" and the rest as the clients and follow the same instructions above with your machine local network IP.</em>
     </div>
     <div id="keyboard" class="sect">
       <h4>Controls</h4>
       <table>
         <tr valign="top">
           <td>W, S, A, D and Mouse pointer :</td>
-          <td>Move and strafe</td>
+          <td>Move and strafe.</td>
         </tr>
         <tr valign="top">
           <td>Mouse left and right :</td>
-          <td>Shoot and aim</td>
+          <td>Shoot and aim (Including laser, scope and thermal vision.)</td>
         </tr>
         <tr valign="top">
           <td>Mouse middle :</td>
-          <td>Lethal grenade toss</td>
+          <td>Lethal grenade toss (Hold to cook the grenade.)</td>
         </tr>
         <tr valign="top">
           <td>Shift :</td>
-          <td>Hold to sprint until no stamina</td>
+          <td>Hold to sprint while having enough stamina.</td>
         </tr>
         <tr valign="top">
           <td>Q :</td>
-          <td>Tactical grenade toss</td>
+          <td>Tactical grenade toss (Hold to cook the grenade.)</td>
         </tr>
         <tr valign="top">
           <td>E :</td>
-          <td>Melee attack</td>
+          <td>Melee attack.</td>
         </tr>
         <tr valign="top">
           <td>F :</td>
-          <td>Action (Press to open airdrop packages/ Press to mount and unmount turrets/ Hold to defuse mines/ Hold to capture machines/ Hold + Shift to trap and de-trap airdrop packages)</td>
+          <td>Action (Press: open airdrops/ mount and unmount turrets, Hold: defuse mines/ capture enemy machines, Hold + Shift: (de)trap airdrops.)</td>
         </tr>
         <tr valign="top">
           <td>T :</td>
-          <td>Hold to talk to your teammates through your default microphone</td>
+          <td>Hold to talk to your teammates through your default microphone.</td>
         </tr>
         <tr valign="top">
           <td>1, 2, 3 :</td>
-          <td>Use killstreaks</td>
+          <td>Use killstreaks.</td>
         </tr>
         <tr valign="top">
           <td>Tab :</td>
-          <td>Hold to see player map and info</td>
+          <td>Hold to see mini-map and player information.</td>
         </tr>
         <tr valign="top">
           <td>F4 :</td>
-          <td>Toggle the fullscreen</td>
+          <td>Toggle fullscreen.</td>
         </tr>
       </table>
     </div>
